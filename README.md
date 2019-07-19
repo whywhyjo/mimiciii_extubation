@@ -1,2 +1,2 @@
 # mimiciii_extubation
-This is a preprocessed dataset in the mimic-iii dataset to predict the extubation failure
+This is a preprocessed dataset from the original mimic-iii dataset to extract population using the mechanical ventilation
