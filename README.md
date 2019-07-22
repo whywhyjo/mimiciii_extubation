@@ -42,5 +42,5 @@ We provide Jupyter Notebook codes, and SQLs based on Postgresql.
 ## Usage
 - Download our git (git clone https://github.com/whywhyjo/mimiciii_extubation).
 - Excute [population_definition.ipynb](./population_definition.ipynb) on Jupyter Notebook to define the population.
-    - This node print out defining population.
-- Then, excute [variable_extraction.ipynb](./variable_extraction.ipynb) to extract variables w.r.t. the population.
+    - This note shows the study population defined.
+- Then, excute [variable_extraction.ipynb](./variable_extraction.ipynb) to extract variables depending on the population.
