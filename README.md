@@ -15,7 +15,7 @@ Successful Extubation: ~~
  
 Failed Extubation: ~~
 
-<img src="https://imgur.com/a/aMjU2qV.png" width=600>
+<img src="https://imgur.com/pkevxCD.png" width=600>
 
 
 ### Variable list 
