@@ -13,24 +13,29 @@ For the furture work, we implement the prediction model based on machine (deep) 
 ### Population definition
 
 
-### Variable list
+### Variable list 
 Look at the [item_ids_dict](./csv/item_ids_dict.csv)
-- There are about 70 variables related to our population with thier IDs defined MIMIC-iii clinical database.
+- There are about 70 variables related to our population with thier IDs defined by MIMIC-iii clinical database.
 
 ### Contributors
 All related to the medical part are defined by our medical team.
-- Young-Jae Cho, MD at Pulmonary and Critical Care, Seoul Nation University Bundang Hospital, South Korea 
-- Hyung Sook Lee at, ?? Seoul National University
-- Jong Hwan Jang, Asan 
+- Young-Jae Cho, Ph.D, MD at Pulmonary and Critical Care, Seoul Nation University Bundang Hospital, South Korea 
+- Hyung Sook Lee, Ph.D student, ~~ at ~~~ Seoul National University, South Korea 
+- Jong Han Jang, ~~ at ~~ Asan Medical Center, South Korea 
+
+All related to the technical part are processed by our tech team.
+- Yong-Yoen Jo, Ph.D. at National Cancer Center, South Korea
+- Jong Hwan Jang, Ph.D student at ~~ Ajou Universiy, South Korea
+- Gyu Hee Kim, Ph.D student at Korea Advanced Institute of Science and Technology, South Korea
 
 ## Requirements
 We provide Jupyter Notebook codes, and SQLs based on Postgresql.
-- The MIMIC-iii clinical database is already builed on Postgresql [mimic_git](https://github.com/MIT-LCP/mimic-code/blob/master/Makefile.md).
+- The MIMIC-iii clinical database is already builed on Postgresql [\[mimic_git\](https://github.com/MIT-LCP/mimic-code/blob/master/Makefile.md).
 - The code requires Python 3.7 or later. 
-- The additional required models for Python is numpy, pandas, and psycopg2.
+- The additional required models for Python is numpy, pandas, and psycopg2 libraries.
 
 ## Usage
-- First, download our git (git clone https://github.com/whywhyjo/mimiciii_extubation).
-- Second, excute [population_definition.ipynb](./population_definition.ipynb) on Jupyter Notebook to define the population.
+- Download our git (git clone https://github.com/whywhyjo/mimiciii_extubation).
+- Excute [population_definition.ipynb](./population_definition.ipynb) on Jupyter Notebook to define the population.
     - This node print out defining population.
 - Then, excute [variable_extraction.ipynb](./variable_extraction.ipynb) to extract variables w.r.t. the population.
