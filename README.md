@@ -11,6 +11,11 @@ For the furture work, we implement the prediction model based on machine (deep) 
 ## Population & variables
 
 ### Population definition
+Successful Extubation: ~~
+ 
+Failed Extubation: ~~
+
+<img src="https://imgur.com/a/aMjU2qV.png" width=600>
 
 
 ### Variable list 
@@ -21,7 +26,7 @@ Look at the [item_ids_dict](./csv/item_ids_dict.csv)
 All related to the medical part are defined by our medical team.
 - Young-Jae Cho, Ph.D, MD at Pulmonary and Critical Care, Seoul Nation University Bundang Hospital, South Korea 
 - Hyung Sook Lee, Ph.D student, ~~ at ~~~ Seoul National University, South Korea 
-- Jong Han Jang, ~~ at ~~ Asan Medical Center, South Korea 
+- Jong Han Park, ~~ at ~~ Asan Medical Center, South Korea 
 
 All related to the technical part are processed by our tech team.
 - Yong-Yoen Jo, Ph.D. at National Cancer Center, South Korea
