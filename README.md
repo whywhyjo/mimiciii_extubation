@@ -35,7 +35,7 @@ All related to the technical part are processed by our tech team.
 
 ## Requirements
 We provide Jupyter Notebook codes, and SQLs based on Postgresql.
-- The MIMIC-iii clinical database is already builed on Postgresql [\[mimic_git\](https://github.com/MIT-LCP/mimic-code/blob/master/Makefile.md).
+- The MIMIC-iii clinical database is already builed on Postgresql [\[mimic_git\]](https://github.com/MIT-LCP/mimic-code/blob/master/Makefile.md).
 - The code requires Python 3.7 or later. 
 - The additional required models for Python is numpy, pandas, and psycopg2 libraries.
 
