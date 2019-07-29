@@ -1,6 +1,6 @@
 DROP MATERIALIZED VIEW IF EXISTS ptsinfo_vent;
 CREATE MATERIALIZED VIEW ptsinfo_vent AS
-WITH load_ventdurations as (
+WITH ventdurations as (
     SELECT vent.* , icu.subject_id
     FROM icustays as icu, ventduration_on_off_time as vent
     WHERE icu.icustay_id = vent.icustay_id
@@ -20,10 +20,10 @@ SELECT
     admittime, dischtime, death_time, 
     CASE WHEN death_time <= vent_off_time then 1 else 0 end as death,
     ventnum, vent_on_time, vent_off_time, unplanned
-   FROM temp_patient
-INNER JOIN load_ventdurations as a
-ON temp_patient.subject_id = a.subject_id
-and admittime < vent_off_time and  vent_on_time < dischtime
+    FROM temp_patient as p
+    INNER JOIN ventdurations as a
+    ON p.subject_id = a.subject_id 
+    where p.admittime < a.vent_on_time and  a.vent_off_time < p.dischtime and  a.vent_on_time < a.vent_off_time
 )
 , trache_temp as(
 select icustay_id, chartevents.itemid, label, charttime, value 
